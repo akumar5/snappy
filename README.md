@@ -34,3 +34,23 @@ xkcd-webserver        edge  0.3.1      -          3a9152b8bff494  *
 - ![xkcd-webserver](xkcd-webserver.png)
 
 - ![go-example-webserver](go-example-webserver.png)
+
+## Build snappy apps for Ubuntu Core
+
+[Ref](http://developer.ubuntu.com/en/snappy/#snap-developers)
+
+```
+$ sudo add-apt-repository ppa:snappy-dev/beta
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install snappy-tools bzr
+```
+
+[Dockerfile](Dockerfile)
+
+Build [hello-world_1.0.5_all.snap](snappy-examples/hello-world/hello-world_1.0.5_all.snap)
+```
+$ cd snappy-examples/hello-world
+$ snappy build .
+```
+

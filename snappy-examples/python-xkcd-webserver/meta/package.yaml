@@ -1,0 +1,10 @@
+name: xkcd-webserver
+version: 0.3.3
+vendor: Michael Vogt <michael.vogt@ubuntu.com>
+icon: meta/xkcd.svg
+services:
+ - name: xkcd-webserver
+   start: bin/xkcd-webserver 
+ports:
+ required: 80
+
